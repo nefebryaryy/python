@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Загрузить файл CSV</title>
+</head>
+<body>
+    <h1>Загрузить файл CSV</h1>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Загрузить">
+    </form>
+</body>
+</html>
+
+<!-- plot.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>График данных</title>
+</head>
+<body>
+    <h1>График данных</h1>
+    <img src="{{ url_for('static', filename='plot.png') }}" alt="График">
+</body>
+</html>
+
